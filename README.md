@@ -30,6 +30,9 @@ The app uses **Supabase** for backend services and `.env` for secure management 
 
 <img width="395" alt="Screenshot 1446-07-10 at 5 10 50 PM" src="https://github.com/user-attachments/assets/b5136ff6-652b-4670-89c0-5d80b842d8a0" />
 
+<img width="1440" alt="Screenshot 1446-07-10 at 7 09 35 PM" src="https://github.com/user-attachments/assets/9538d960-7c0c-4c54-b430-14cfea9a23be" />
+
+
 ---
 
 ## Future Enhancements
