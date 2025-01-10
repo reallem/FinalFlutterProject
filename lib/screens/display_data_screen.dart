@@ -19,7 +19,7 @@ class DisplayDataScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Task List'),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.indigo,
       ),
       body: FutureBuilder<List<Map<String, dynamic>>>(
         future: _fetchTasks(),
@@ -55,8 +55,9 @@ class DisplayDataScreen extends StatelessWidget {
                     style: const TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text(task['description'] ?? 'No description'),
-                  leading: const Icon(Icons.task, color: Colors.indigo),
+                  leading: const Icon(Icons.task, color: Colors.indigo,
                 ),
+              )
               );
             },
           );

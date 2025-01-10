@@ -36,7 +36,8 @@ class _AddDataScreenState extends State<AddDataScreen> {
       Navigator.pop(context);
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text('Error adding task: ${response.error!.message}')),
+        SnackBar(
+            content: Text('Error adding task: ${response.error!.message}')),
       );
     }
   }
@@ -46,7 +47,7 @@ class _AddDataScreenState extends State<AddDataScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Add Task'),
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.indigo,
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -83,8 +84,9 @@ class _AddDataScreenState extends State<AddDataScreen> {
             Center(
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.indigo,
-                  padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+                  backgroundColor: Colors.white,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
                 ),
                 onPressed: _addTask,
                 child: const Text('Add Task', style: TextStyle(fontSize: 18)),

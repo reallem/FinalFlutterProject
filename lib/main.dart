@@ -8,11 +8,8 @@ import 'screens/display_data_screen.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  print("Initializing app...");
-
   try {
     await dotenv.load(fileName: ".env");
-    print("Environment loaded.");
     print("SUPABASE_URL: ${dotenv.env['SUPABASE_URL']}");
     print("SUPABASE_ANON_KEY: ${dotenv.env['SUPABASE_ANON_KEY']}");
   } catch (e) {
@@ -37,7 +34,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    print("Building MyApp...");
     return MaterialApp(
       title: 'Task Manager App',
       theme: ThemeData(
@@ -45,8 +41,8 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/',
       routes: {
-        '/': (context) => HomeScreen(),
-        '/add': (context) => AddDataScreen(),
+        '/': (context) => const HomeScreen(),
+        '/add': (context) => const AddDataScreen(),
         '/display': (context) => DisplayDataScreen(),
       },
     );

@@ -1,16 +1,16 @@
 name: flutter_application_final
-description: "A new Flutter project."
+description: A new Flutter project.
 publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.5.4
+  sdk: ">=3.5.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  supabase_flutter: ^1.10.25
   flutter_dotenv: ^5.0.2
-  supabase_flutter: ^1.0.0
 
 dev_dependencies:
   flutter_test:
@@ -19,3 +19,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - .env
+    
